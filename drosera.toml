@@ -15,4 +15,5 @@ block_sample_size = 2  # Increased to 2 for transition detection
 private = true
 whitelist = ["0x050fa1e721140e8552f8a1565bfcd737a88ade31"]
 private_trap = true
+address = "0x0F4b0C82bb91D7Ef4DcC7bE4F58053A029686A13"
 # No constructor_args - hardcoded target
