@@ -4,16 +4,15 @@ drosera_rpc = "https://relay.hoodi.drosera.io"
 eth_chain_id = 560048
 drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
 
-[traps.governance_quorum_sentinel_fixed]
+[traps.governance_quorum_sentinel_fixed_v2]
 path = "out/GovernanceQuorumSentinelTrapFixed.sol/GovernanceQuorumSentinelTrapFixed.json"
-response_contract = "0x3a0c667A8dcC2364b36ACfaC9ceA1EC58218371f"
+response_contract = "0xe1936547643D50bBc9F92B92989b12160c415F77"  # Will update after deployment
 response_function = "respondToQuorumFailure(string)"
 cooldown_period_blocks = 50
 min_number_of_operators = 1
 max_number_of_operators = 3
-block_sample_size = 1
+block_sample_size = 2  # Increased to 2 for transition detection
 private = true
 whitelist = ["0x050fa1e721140e8552f8a1565bfcd737a88ade31"]
 private_trap = true
-address = "0x8D5338fe54cd0941c347a78E2224ea916fbD1c22"
-# NO constructor_args - because no constructor!
+# No constructor_args - hardcoded target
